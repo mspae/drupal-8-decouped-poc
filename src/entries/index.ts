@@ -1,11 +1,10 @@
 /**
  * Boot up the Vue instance and wire up the router.
  */
-var Vue = require('vue')
-Vue.use(require('vue-resource'))
-var Router = require('director').Router
-var app = new Vue(require('./app.vue'))
-var router = new Router()
+import Vue = require('vue')
+import appView = require('./views/app.vue');
+const app = new Vue(appView)
+const router = new Router()
 
 /**
  * Router.
